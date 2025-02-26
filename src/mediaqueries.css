@@ -1,0 +1,23 @@
+/* Media Queries para Responsividade, HD - HARLEY DAVIDSON*/
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Menu lateral ocupa toda a largura na tela menor */
+        height: auto; /* Altura automática */
+        position: relative; /* Menu não é mais fixo */
+    }
+
+    .main_content {
+        margin-left: 0; /* Remove a margem */
+        padding: 1rem; /* Ajusta o padding */
+    }
+
+    .logo_hd img {
+        width: 50%; /* Ajusta a largura do logo */
+    }
+
+    .img_moto p {
+        text-align: center; /* Centraliza o texto na tela menor */
+        margin-top: 1rem;
+    }
+}

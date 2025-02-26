@@ -1,0 +1,191 @@
+/* Página Home Harley Davidson */
+
+/*---------------*/
+/* Importações */
+/*---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------*/
+/* Padrões */
+/*---------------*/
+:root {
+    --font-titles: "Bebas Neue";
+    --font-text: "Lato";
+    --orange-color: #FA6600;
+    --black-color: #1E1E1E;
+    --grey-color: #d9d9d9;
+}
+
+body {
+    font-family: var(--font-titles);
+}
+
+/*---------------*/
+/* Menu Lateral Fixo */
+/*---------------*/
+
+.sidebar {
+    position: fixed;
+    background-color: black;
+    width: 20vw; 
+    height: 100%;
+    z-index: 100; 
+}
+
+.logo_hd {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo_hd img {
+    width: 15vw;
+    max-width: 150px; 
+}
+
+.sidebar_menu li {
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.sidebar_menu li:hover {
+    background-color: var(--orange-color);
+}
+
+.sidebar_menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* MAIN */
+
+.main_content {
+    margin-left: 20vw;
+    padding: 2rem;
+}
+
+/*---------------*/
+/* Seção News Motos */
+/*---------------*/
+
+.titles {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.titles h2 {
+    margin-left: 0.63rem;
+    text-decoration: underline;
+}
+
+.titles i {
+    font-size: 1.85rem;
+    color: var(--orange-color);
+}
+
+.img_moto {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.img_moto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_moto p {
+    text-align: right; 
+    margin-top: 1rem; 
+    font-size: 1rem;
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+/*------------------------*/
+/* Seção News Vestuario */
+/*------------------------*/
+.vestuario_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.25rem;
+    margin: 1.25rem;
+}
+
+.products {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.products img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.products h3 {
+    color: #fff;
+    margin-top: 0.63rem;
+}
+
+.products button {
+    margin-top: 0.63rem;
+    padding: 10px;
+    width: 100%; 
+    background-color: #FA6600;
+    color: var(--black-color);
+    border: none;
+    font-family: var(--font-titles);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.products button:active {
+    transform: translateY(2px);
+}
+
+/*------------------------*/
+/* Seção News Noticias */
+/*------------------------*/
+
+.noticias_content {
+    background-color: var(--black-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.title_news {
+    font-size: 1.5rem;
+    color: var(--orange-color);
+}
+
+.noticias_content img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.noticias_content p {
+    font-family: var(--font-text);
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.noticias_content a {
+    color: #FA6600;
+    font-family: var(--font-text);
+}
